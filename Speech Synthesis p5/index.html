@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speech Synthesis</title>
+	<script type="text/javascript" src="p5.min.js"></script>
+	<script type="text/javascript" src="p5.speech.js"></script>
+	<script type="text/javascript" src="code.js"></script>
+</head>
+<body>
+	<h1>Speech Synthesis</h1>
+	<div>
+		<input type="text" id="message" />
+		<button onclick="say()">Speak</button>
+	</div>		
+	<div>
+		Rate: <input type="range" value="1" min="0" step="0.1" onchange="changeRate(this)">
+	</div>
+	<div>
+		Pitch: <input type="range" value="1" min="0" step="0.1" onchange="changePitch(this)">
+	</div>
+	<div>
+		Volume: <input type="range" value="0.8" min="0" max="1" step="0.05" onchange="changeVolume(this)">
+	</div>	
+</body>
+</html>
