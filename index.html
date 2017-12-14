@@ -10,21 +10,6 @@
 <body>
 	<h1>무슨 말을 하고 싶으세요?</h1>
 	<h4>감정을 담아 이야기 해주세요.</h4>
-	var speech;
-
-	window.onload = function(){
-		speech = new p5.SpeechRec();
-		speech.onResult = function(){
-			document.body.innerHTML = "You said: <h2>"+speech.resultString+"</h2>";
-			document.body.innerHTML += "<div><button onclick=\"listen()\">Click to listen again</button></div>";
-		}
-		speech.start();
-	};
-	function listen(){
-		speech.start();	
-	}
-
-		
 		
 </body>
 </html>
