@@ -1,4 +1,10 @@
+function setup(){
+	createCanvas(200,200);
+	fill(200);
+}
+
 var speech;
+
 window.onload = function(){
 	speech = new p5.SpeechRec();
 	speech.onResult = function(){
