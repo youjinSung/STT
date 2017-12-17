@@ -1,3 +1,4 @@
+var myP;
 function setup() {
   //createCanvas(windowWidth, windowHeight);
   
@@ -9,7 +10,7 @@ function setup() {
   speech.onResult = function() {
     
     //textFont(myFont);
-    createP = (speech.resultString);
+    myP = createP(speech.resultString);
     
     document.body.innerHTML += "<div><button onclick=\"listen()\">Click to listen again</button></div>";
   }
