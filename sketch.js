@@ -1,8 +1,6 @@
-var myP;
 function setup() {
   //createCanvas(windowWidth, windowHeight);
-  
-	noCanvas();
+  noCanvas();
   //function preload() {
   	//myFont = loadFont('assets/AvenirNextLTPro-Demi.otf');}
   var speech;
@@ -10,8 +8,7 @@ function setup() {
   speech.onResult = function() {
     
     //textFont(myFont);
-    myP = createP(speech.resultString);
-    
+    document.body.innerHTML +="<h2>"+speech.resultString+"</h2>";
     document.body.innerHTML += "<div><button onclick=\"listen()\">Click to listen again</button></div>";
   }
   speech.start();
