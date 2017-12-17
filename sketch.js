@@ -8,7 +8,7 @@ function setup() {
   speech.onResult = function() {
     
     //textFont(myFont);
-    document.body.innerHTML +="<h2>"+speech.resultString+"</h2>";
+    document.body.innerHTML ="<h2>"+speech.resultString+"</h2>";
     document.body.innerHTML += "<div><button onclick=\"listen()\">Click to listen again</button></div>";
   }
   speech.start();
